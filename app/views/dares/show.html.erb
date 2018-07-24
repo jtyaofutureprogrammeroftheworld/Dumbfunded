@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Message:</strong>
+  <%= @dare.message %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%=  link_to @dare.user.username , show_user_path(id: @dare.user.id) %>
+</p>
+
+<%= link_to 'Edit', edit_dare_path(@dare) %> |
+<%= link_to 'Back', dares_path %>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dumbfunded</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+  	<nav>
+  	<div class="row">
+  		<div class="col-md-3">
+  			<%= link_to "Dumbfunded", root_path,id:"logo1" %>
+  		</div>
+
+  		<div class="col-md-1">
+  			<%= link_to "My Profile", root_path, id:"words"%>
+  		</div>
+  		<div class="col-md-1">
+  		<%= link_to "Replays", root_path, id:"words"%>
+  		</div>
+  		<div class="col-md-1">
+  			<%= link_to 'All Users',all_users_path, id:"words"%>
+  		</div>
+  		<div class="col-md-1">
+  			<%= link_to "123456", root_path, id:"words"%>
+  		</div>
+  		<div class="col-md-1">
+  			<%= link_to "123456", root_path, id:"words"%>
+  		</div>
+  		<div class="col-md-1">
+  			<%= link_to "123456", root_path, id:"words"%>
+  		</div>
+
+
+  		<div class="col-md-3">
+        <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
+  		
+  		</div>
+  	</div>
+  </nav>
+  
+  	<br>
+  	<br>
+
+
+    <%= yield %>
+  </body>
+</html>

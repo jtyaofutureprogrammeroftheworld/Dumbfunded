@@ -1,0 +1,40 @@
+<h1 class="text-center">@<%= current_user.username %>,Dare to be Dumb!</h1>
+<p class="text-center"> These dares, they need a dare devil</p>
+<br>
+
+<div class= "row">
+	<div class="col-md-3">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panle-title"><%= current_user.username %>'s Feed </h3>
+			</div>
+			<div class="panel-body">
+				<%= pluralize current_user.dares.count, 'Dares' %><br>
+				Following <%= pluralize current_user.following.count, 'dare devils' %>
+
+
+			</div>
+		</div>
+	</div>
+
+
+
+<div class="col-md-6">
+
+	<% @following_dares.each do |dare| %>
+		<div class="well">
+			<p>@<%= dare.user.username %></p>
+			<p><%= dare.message.html_safe %></p>
+		</div>
+		
+	<% end %>
+
+</div>
+
+<div class="col-md-3">
+
+
+	</div>
+</div>
+
+<%= link_to 'Back', dares_path %>

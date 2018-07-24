@@ -1,0 +1,87 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ 
+ */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+#block {
+	
+}
+
+html {
+	
+	background-color:#B0C4DE;
+	opacity:.9;
+}
+
+
+}
+
+
+nav { 
+	width:100%;
+	height:100px;
+	background-color:Dodgerblue;
+	border: 4px solid;
+	border-top-color:red;
+	border-bottom-color:green;
+	border-left-color:blue;
+	border-left-color:yellow;
+	opacity:0.5;
+	overflow:hidden;
+ }
+
+ nav a {
+ display:block;
+ float:left;
+
+ 
+
+
+
+ }
+
+ #logo1 {
+
+ 	font-family:'Gaegu', cursive;
+ 	font-size:35px;
+ 	letter-spacing:5px;
+ 	text-shadow: 1px 1px 1px #808000;
+ 	color: #b3b300;
+ 	padding-left:20px;
+ 	padding-right:10px;
+ 	float:left;
+
+ }
+
+  #logo1:hover {
+ 	background-color: red;
+ }
+
+ #words {
+
+ 	text-align:center;
+ 	font-color:#b3b300;
+ 	background-color:red;
+ 	margin-top:25px;
+
+
+
+
+ }
+ 
+ .well {
+ background-color:Tomato;
+ opacity:0.7;
+ }
