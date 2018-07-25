@@ -17,14 +17,15 @@
 		</div>
 	</div>
 
-
+ 
 
 <div class="col-md-6">
 
 	<% @following_dares.each do |dare| %>
 		<div class="well">
-			<p>@<%= dare.user.username %></p>
+			<strong>@<%= dare.user.username %></strong> <%= time_ago_in_words(dare.created_at) %> ago
 			<p><%= dare.message.html_safe %></p>
+
 		</div>
 		
 	<% end %>

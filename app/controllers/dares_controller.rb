@@ -7,6 +7,7 @@ class DaresController < ApplicationController
   # GET /dares.json
   def index
     @dares = Dare.all
+    @user =  User.all
   end
 
   # GET /dares/1

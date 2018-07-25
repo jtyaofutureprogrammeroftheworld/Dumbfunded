@@ -15,6 +15,7 @@ class EpicenterController < ApplicationController
 
   def all_users
     @users= User.all 
+    @dare = Dare.all
   end
 
   def following
